@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.right-menu li
+{
+    display: inline-block;
+    margin-top: 30px !important;
+    
+}
+
+.right-menu li .fa
+{
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.navbar-brand img
+{
+    width: 150px;
+    height: 80px;
+}
+.navbar-brand
+{
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.Header{
+    background-color: #c7c7c7;
+    margin-bottom: 80px;
+}
+.navbar
+{
+    padding: 0 35px; !important
+}
+.navbar-toggler
+{
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-top: 30px;
+}
+.navbar-toggler .fa
+{
+    font-size: 30px;
+    cursor: pointer;
+}
+.carousel-inner img
+{
+    width: 100%;
+    height: 640px;
+    margin-bottom: 5px;
+    
+}
+.banner-img
+{
+    margin: 80px 115px;
+    width: 60%;
+}
+.banner-img img
+{
+    width: 100%;
+    bottom: -80px;
+}
+.banner
+{
+    position: relative;
+}
+.banner-title
+{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+.banner-title h1
+{
+    font-size: 56px;
+    background-color: rgba(0,0,0,0.75);
+    color: #fff;
+    line-height: 70px;
+    padding: 10px 10px 0 10px;
+    
+}
+.fashion-trends
+{
+    padding: 0 0;
+}
+.fashion-box
+{
+    margin: 80px 0;
+}
+.title-style h1
+{
+    padding: 40px 0;
+}
+.title-style
+{
+    margin: 0 auto 80px;
+    height: 120px;
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 4px 5px 0 rgba(0,0,50,0.5);
+}
+.title-style::after
+{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: #f992a6;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+}
+.title-style::before
+{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: #f992a6;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+}
+.trending-image
+{
+    position: relative;
+    margin-bottom: 15px;
+}
+.trending-image img
+{
+    width: 100%;
+}
+.btn-buy
+{
+    width: 150px;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #fff;
+    left: 50%;
+    bottom: 0;
+    transition: 0.6s;
+    transform: translate(-50%,0);
+    opacity: 0;
+    z-index: 1;
+    
+}
+.trending-image:hover .btn-buy
+{
+    transform: translate(-50%,50%);
+    bottom: 50%;
+    opacity: 1;
+}
+.overlay
+{
+    height: 0;
+    width: 100%;
+    background: #333;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.trending-image:hover .overlay
+{
+    opacity: 0.5;
+    height: 100%;
+}
+/*-----------offer---------*/
+.offer
+{
+    background-image: url(offer3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.row
+{
+    margin: initial !important;
+    
+}
+.subscribe
+{
+    max-width: 500px;
+    margin-top: 80px;
+    padding: 60px;
+    background: #ffffff8c;
+    margin-bottom: 20px;
+    
+}
+.subscribe a
+{
+    width: 100px;
+    display: block;
+    color: #fff !important;
+    background: #000;
+    text-decoration: none !important;
+    padding: 5px;
+    text-align: center;
+    
+}
+.offer img
+{
+    width: 300px;
+    height: 400px;
+    margin: -100px;
+    margin-top: 150px;
+    
+}
+/*---------fashion blog-----------------*/
+.fashion-blog
+{
+    margin: 100px 0 100px 0;
+}
+.blog-img
+{
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+}
+.blog-img img
+{
+    width: 100%;
+    height: 100%;
+}
+.fashion-blog h5
+{
+    margin-top: 20px;
+    font-weight: bold;
+    
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+    margin-bottom: 80px;/* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card h3
+{
+    margin-top: 80px;
+    text-align: center;
+}
+/*------------fashion brands--------------*/
+.fashion-brands
+{
+    margin-bottom: 150px;
+}
+.brand-logo
+{
+    height: 200px;
+    width: 200px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 50px auto 30px;
+    box-shadow: 0 2px 40px 0 rgba(110,130,208,0.18);
+}
+.brand-logo img
+{
+    width: 100px;
+    margin: 50px auto;
+    
+}
+.fashion-brands p
+{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/*--------------------header-------------------*/
+#head {
+	background: #181015;
+	background-size: cover;
+	height: 600px;
+	text-align: center;
+	color: white;
+	font-weight: 300;
+	position: relative; 
+	background-position: center;
+}
+#head.secondary {
+	height: 100px;
+	min-height: 100px;
+	padding-top: 0px;
+}
+.about
+{
+    background-color: white;
+    background-size: cover;
+}
+.team-member {
+	padding-top: 5px;
+	margin-bottom: 15px;
+}
+.team-heading {
+	display: block;
+	width: 100%;
+}
+.member-img {
+	overflow: auto;
+}
+.member-img img {
+	border-radius: 50%; 
+    height: 200px;
+    margin-left: 170px;
+    
+}
+.team-socials {
+	margin: 15px 0;
+	display: block;
+	text-align: center;
+}
+.team-socials i {
+	width: 35px;
+	height: 35px;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	color: #C7C7C7;
+}
+.team-socials i:hover {
+	color: #3d84e6;
+}
+.team-member h4 {
+	font-size: 19px;
+	line-height: 32px;
+	padding: 10px 0 0;
+	text-align: center;
+	margin: 0px;
+}
+.team-member .pos {
+	display: block;
+	margin: 0;
+	text-align: center;
+}
+.btn
+{
+    margin-left: 220px;
+}
+/*-------------------shop------------------*/
+.page_header {
+	margin:10px 0 85px;
+}
+
+.page_header2 {
+    margin: 75px 0;
+}
+
+.page_header h2 {
+	font-family: bebas-neue, sans-serif;
+	color:#000;
+	text-transform:uppercase;
+	font-size:80px;
+	font-weight:400;
+}
+
+.page_header p {
+    margin-right: 15px;
+    font-size: 16px;
+    font-style: italic;
+    color: #ef7c00;
+    font-family: "Droid Serif",serif;
+}
+
+.rating {
+    display: table;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: -19px auto 10px;
+    position: relative;
+    z-index: 11;
+}
+
+.rating span {
+	color:#ddd;
+}
+
+.rating span.act {
+	color:#eecf55;
+}
+
+.shop-mason-4col .sm-item {
+	width:25%;
+	padding:0 15px;
+	margin:0 0 65px;
+	text-align:center;
+}
+
+.shop-mason-3col .sm-item {
+	width:33.3333%;
+	padding:0 15px;
+	margin:0 0 65px;
+	text-align:center;
+}
+
+.product-title {
+	font-family: "Roboto Slab";
+	font-size:20px;
+	padding:0 20px;
+	margin:0 0 5px;
+}
+
+.product-title a {
+color:#000;
+}
+
+.product-price {
+	color:#ef7c00;
+	font-weight:700;
+}
+
+.product-price span {
+	text-decoration:line-through;
+	color:#bbb;
+	font-weight:400;
+	margin-left:10px;
+	font-size:15px;
+}
+
+.product-thumb {
+	position:relative;
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+	opacity:0;
+	visibility:hidden;
+	transition:.4s;
+}
+
+.product:hover .product-overlay {
+	opacity:1;
+	visibility:visible;
+	transition:.4s;
+}
+
+.product-overlay span {
+position: absolute;
+top: 50%;
+margin-top: -20px;
+left: 0;
+right: 0;
+}
+
+.product-overlay span a {
+	background:#ef7c00;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+	margin:0 20px;
+	transition:.4s;
+}
+
+.product-overlay span a:hover {
+	background:#fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #ef7c00;
+    font-size: 18px;
+}
+
+.product:hover .product-overlay span a {
+	transition:.4s;
+	margin:0 1px;
+}
+/*-------------cart------------------*/
+
+/*-------------payment gateway-----------*/
+.footer
+{
+    margin-top: 150px;
+    background: #c7c7c7;
+}
+.payment,.insta-img,.app-download
+{
+    margin: 50px auto;
+}
+.payment img
+{
+    width: 300px;
+    cursor: pointer;
+}
+.insta-img img
+{
+    width: 75px;
+    padding: 5px;
+    cursor: pointer;
+}
+.app-download img
+{
+    width: 200px;
+    cursor: pointer;
+    padding: 5px;
+}
+.footer h5
+{
+    margin-bottom: 50px;
+}
+.footer h5::before
+{
+    content: '';
+    width: 70px;
+    height: 3px;
+    background: #4f74e8;
+    top: 75px;
+    position: absolute;
+}
+.footer-icons
+{
+    text-align: right;
+    
+}
+.footer-icons .fa
+{
+    margin: 0 10px auto;
+    font-size: 20px;
+    
+}
